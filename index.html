@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>answer 8</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css\style.css">
+  </head>
+  <body>
+    <div class="calculator">
+      <form class="form-inline">
+        <div class="form-group">
+          <label for="exampleValue1">Value 1:</label>
+          <input type="number" class="control form-control" id="value1" placeholder="5">
+        </div>
+        <div class="form-group">
+          <label for="exampleValue2">Value 2:</label>
+          <input type="number" class="control form-control" id="value2" placeholder="8">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="exampleOption">Operation:</label>
+          <select class="control form-control" id='operation'>
+            <option>sum</option>
+            <option>subtraction</option>
+            <option>division</option>
+            <option>multiplication</option>
+          </select>
+
+        </div>
+        <div class="form-group">
+          <button id='calculate' type="button" class="btn btn-success">Calculate</button>
+          <button id='reset' type="reset" class="btn btn-danger">Restart</button>
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="result">Result</label>
+          <label id='result'></label>
+        </div>
+      </form>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/app.js">
+    </script>
+  </body>
+</html>
